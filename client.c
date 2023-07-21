@@ -137,10 +137,10 @@ static struct {
 	unsigned modifiers;
 	void (*function)(struct client *, unsigned, Time);
 } keymap[] = {
-	{ XK_C, ShiftMask | Mod1Mask, keypress_delete },
-	{ XK_Tab, Mod1Mask, keypress_pushapp },
-	{ XK_Return, Mod1Mask, keypress_fullscreen },
-	{ XK_space, Mod1Mask, keypress_sticky },
+	{ XK_C, ShiftMask | Mod4Mask, keypress_delete },
+	{ XK_Tab, Mod4Mask, keypress_pushapp },
+	{ XK_Return, Mod4Mask, keypress_fullscreen },
+	{ XK_space, Mod4Mask, keypress_sticky },
 };
 
 void setndesk(Desk val)

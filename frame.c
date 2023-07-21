@@ -272,7 +272,7 @@ static void buttonpress(struct frame *f, XButtonEvent *e)
 		cpopapp(f->client);
 		cfocus(f->client, e->time);
 
-		if (e->y < EXT_TOP || (e->state & Mod1Mask) != 0) {
+		if (e->y < EXT_TOP || (e->state & Mod4Mask) != 0) {
 			f->grabbed = True;
 			csetappfollowdesk(f->client, True);
 			f->downx = e->x;
@@ -411,7 +411,7 @@ struct frame *fcreate(struct client *c)
 			ButtonReleaseMask |
 			ExposureMask);
 
-	grabbutton(Button1, Mod1Mask, f->window, False, ButtonReleaseMask,
+	grabbutton(Button1, Mod4Mask, f->window, False, ButtonReleaseMask,
 			GrabModeAsync, GrabModeAsync, None, None);
 
 	/*

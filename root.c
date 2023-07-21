@@ -52,16 +52,16 @@ static struct keybind {
 	int arg;
 	KeyCode keycode;
 } keymap[] = {
-	{ XK_1, Mod1Mask, fnkey, 1 },
-	{ XK_2, Mod1Mask, fnkey, 2 },
-	{ XK_3, Mod1Mask, fnkey, 3 },
-	{ XK_4, Mod1Mask, fnkey, 4 },
-	{ XK_5, Mod1Mask, fnkey, 5 },
-	{ XK_6, Mod1Mask, fnkey, 6 },
-	{ XK_7, Mod1Mask, fnkey, 7 },
-	{ XK_8, Mod1Mask, fnkey, 8 },
-	{ XK_9, Mod1Mask, fnkey, 9 },
-	{ XK_0, Mod1Mask, fnkey, 10 },
+	{ XK_z, Mod4Mask, fnkey, 1 },
+	{ XK_x, Mod4Mask, fnkey, 2 },
+	{ XK_c, Mod4Mask, fnkey, 3 },
+	{ XK_v, Mod4Mask, fnkey, 4 },
+	{ XK_b, Mod4Mask, fnkey, 5 },
+	{ XK_6, Mod4Mask, fnkey, 6 },
+	{ XK_7, Mod4Mask, fnkey, 7 },
+	{ XK_8, Mod4Mask, fnkey, 8 },
+	{ XK_9, Mod4Mask, fnkey, 9 },
+	{ XK_0, Mod4Mask, fnkey, 10 },
 
 	{ XK_1, ShiftMask | Mod1Mask, fnkey, 1 },
 	{ XK_2, ShiftMask | Mod1Mask, fnkey, 2 },
