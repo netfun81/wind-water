@@ -137,9 +137,9 @@ static struct {
 	unsigned modifiers;
 	void (*function)(struct client *, unsigned, Time);
 } keymap[] = {
-	{ XK_C, ShiftMask | Mod4Mask, keypress_delete },
+	{ XK_D, Mod4Mask, keypress_delete },
 	{ XK_Tab, Mod4Mask, keypress_pushapp },
-	{ XK_Return, Mod4Mask, keypress_fullscreen },
+	{ XK_F, Mod4Mask, keypress_fullscreen },
 	{ XK_space, Mod4Mask, keypress_sticky },
 };
 
